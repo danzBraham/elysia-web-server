@@ -1,5 +1,4 @@
 import { Elysia } from 'elysia';
-
 const app = new Elysia();
 
 // Basic HTTP Method

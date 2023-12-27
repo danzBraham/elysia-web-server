@@ -1,4 +1,4 @@
-import app from './01-essential/02-path';
+import app from './01-essential/03-handler';
 // import { Elysia } from 'elysia';
 // import plugin from './plugin';
 
