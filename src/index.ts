@@ -1,6 +1,9 @@
 import { Elysia } from 'elysia';
+import plugin from './plugin';
 
 const app = new Elysia();
+
+app.use(plugin({ version: 'v1' }));
 
 app.state('version', 1);
 app.state('counter', 0);
@@ -20,6 +23,8 @@ app.get('/', ({ set, store, logger }) => {
 });
 app.route('M-SEARCH', '/', () => 'connect');
 app.all('/', () => 'Hello');
+
+app.get('/all', (context) => context);
 
 app.get('/about', () => 'About Elysia');
 app.get('/about/*', ({ params }) => `wildcard path: ${params['*']}`);
