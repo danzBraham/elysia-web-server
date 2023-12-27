@@ -1,4 +1,4 @@
-import app from './01-essential/01-route';
+import app from './01-essential/02-path';
 // import { Elysia } from 'elysia';
 // import plugin from './plugin';
 
@@ -45,9 +45,5 @@ import app from './01-essential/01-route';
 // });
 
 app.listen(3000);
-
-// // app.handle(new Request('http://localhost:3000/')).then(console.log);
-// // app.handle(new Request('http://localhost:3000/about')).then(console.log);
-// // app.handle(new Request('http://localhost:3000/blogs')).then(console.log);
 
 console.log(`🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`);
