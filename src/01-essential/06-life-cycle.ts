@@ -1,10 +1,6 @@
 import { Elysia } from 'elysia';
+import { isHtml } from '@elysiajs/html';
 const app = new Elysia();
-
-const htmlRegex = /<([a-z][\w-]*)[^>]*>/i;
-function isHtml(str: string) {
-  return htmlRegex.test(str);
-}
 
 // Local Hook
 // The local hook is executed on a specific route
