@@ -3,6 +3,7 @@
   "version": "1.0.50",
   "module": "src/index.ts",
   "dependencies": {
+    "@elysiajs/html": "^0.8.0",
     "elysia": "latest"
   },
   "scripts": {
